@@ -3,147 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Hosein Shajari - Portfolio</title>
     <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
         /* General styles */
         html, body {
             height: 100%;
             margin: 0;
             display: flex;
             flex-direction: column;
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #1e1e1e;
-            color: #dcdcdc;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0b1a29; /* Darker blue background color */
+            color: #c9d1d9; /* Light gray text color */
+            line-height: 1.6;
         }
 
         /* Container */
         .container {
             flex: 1;
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
 
         /* Header */
         header {
-            background-color: #333;
-            color: #61dafb;
-            padding: 15px 0;
+            background-color: #1b2735; /* Slightly blue background */
+            padding: 20px 0;
             text-align: center;
-            border-bottom: 2px solid #61dafb;
+            border-bottom: 1px solid #30363d; /* Soft dark gray border */
         }
 
         header h1 {
             margin: 0;
-            font-size: 36px;
-        }
-
-        /* Navigation */
-        nav {
-            margin-top: 10px;
-        }
-
-        nav a {
-            color: #61dafb;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            color: #dcdcdc;
+            font-size: 32px;
+            color: #c9d1d9; /* Light gray text */
         }
 
         /* Main content */
         main {
-            padding: 50px 20px;
-            background-color: #2d2d2d;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
+            padding: 40px 20px;
+            background-color: #1b2735; /* Darker blue background for main content */
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin: 20px 0;
             text-align: center;
         }
 
         main h2 {
-            font-size: 28px;
+            font-size: 24px;
+            color: #6abaff; /* Bluer accent for headers */
             margin-bottom: 20px;
-            color: #61dafb;
         }
 
         main p {
-            font-size: 18px;
-            line-height: 1.6;
+            font-size: 16px;
+            color: #8b949e; /* Soft gray for paragraphs */
             margin-bottom: 15px;
-            color: #9cdcfe;
         }
 
         /* Circular image */
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
             margin: 20px auto;
-            border: 3px solid #61dafb;
+            border: 2px solid #30363d; /* Soft dark border */
         }
 
         main img {
             max-width: 100%;
-            border-radius: 10px;
+            border-radius: 8px;
             margin-top: 20px;
         }
 
         /* Footer */
         footer {
-            background-color: #333;
-            color: #dcdcdc;
+            background-color: #1b2735;
+            color: #8b949e;
             text-align: center;
             padding: 20px 0;
+            border-top: 1px solid #30363d;
             margin-top: auto;
         }
 
         footer p {
             margin: 0;
+            font-size: 14px;
         }
 
         footer a {
-            color: #61dafb;
+            color: #6abaff; /* Bluer accent for links */
             text-decoration: none;
         }
 
         footer a:hover {
-            color: #dcdcdc;
+            text-decoration: underline;
         }
 
         .social-links {
             margin: 20px 0;
-            text-align: center;
         }
 
         .social-links a {
-            color: #61dafb;
+            color: #6abaff;
             text-decoration: none;
             margin: 0 10px;
-            font-size: 20px;
+            font-size: 16px;
         }
 
         .social-links a:hover {
-            color: #dcdcdc;
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            main {
+                padding: 30px 15px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            main h2 {
+                font-size: 22px;
+            }
+
+            main p {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to my web page</h1>
+        <h1>Hosein Shajari</h1>
     </header>
     
     <div class="container">
         <main>
-            <h2>About me</h2>
+            <h2>About Me</h2>
             <img src="profile-img.jpg" alt="Profile Picture" class="profile-img">
-            <p>I`m Hosein Shajari, a student of Mechatronics.</p>
-            <p>I love coding and programming and am trying to learn new things.</p>
-            <p>I've tried different programming languages, and you can find my experiences and code on my GitHub page!</p>
+            <p>I'm Hosein Shajari, a student of Mechatronics.</p>
+            <p>I love coding and programming and am always trying to learn new things.</p>
+            <p>I've experimented with different programming languages, and you can find my experiences and code on my GitHub page!</p>
         </main>
     </div>
 
@@ -151,7 +159,7 @@
         <p>© 2024 hoseinvsc</p>
         <p>Email me at: <a href="mailto:hoseinvsc@gmail.com">hoseinvsc@gmail.com</a></p>
         <div class="social-links">
-            <p>Connect with me on socialmedia:</p>
+            <p>Connect with me:</p>
             <a href="https://github.com/hoseinvsc" target="_blank">GitHub</a>
             <a href="https://twitter.com/binvw" target="_blank">Twitter</a>
             <a href="https://t.me/hoseinvsc" target="_blank">Telegram</a>
