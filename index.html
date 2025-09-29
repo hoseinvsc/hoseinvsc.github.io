@@ -1,162 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hosein Shajari - Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-        html, body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            font-family: 'Poppins', sans-serif;
-            background-color: #0b1a29;
-            color: #c9d1d9; 
-            line-height: 1.6;
-        }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #e6edf3;
+      background: #0d1117;
+    }
 
-        .container {
-            flex: 1;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    header {
+      background: #161b22;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      color: #8b949e;
+    }
 
-        
-        header {
-            background-color: #1b2735; 
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 1px solid #30363d; 
-        }
+    main {
+      max-width: 850px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-            color: #c9d1d9;
-        }
+    section {
+      margin-bottom: 2rem;
+      background: #161b22;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid #30363d;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
 
-        main {
-            padding: 40px 20px;
-            background-color: #1b2735; 
-            border: 1px solid #30363d;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
-            text-align: center;
-        }
+    section h2 {
+      margin-top: 0;
+      color: #58a6ff;
+    }
 
-        main h2 {
-            font-size: 24px;
-            color: #6abaff; 
-            margin-bottom: 20px;
-        }
+    ul {
+      padding-left: 1.2rem;
+    }
 
-        main p {
-            font-size: 16px;
-            color: #8b949e; 
-            margin-bottom: 15px;
-        }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
 
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 20px auto;
-            border: 2px solid #30363d; 
-        }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #161b22;
+      color: #8b949e;
+      font-size: 0.9rem;
+    }
 
-        main img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
+    .social-links {
+      margin-top: 1rem;
+    }
+    .social-links a {
+      margin: 0 10px;
+      font-size: 1rem;
+    }
 
-        footer {
-            background-color: #1b2735;
-            color: #8b949e;
-            text-align: center;
-            padding: 20px 0;
-            border-top: 1px solid #30363d;
-            margin-top: auto;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 14px;
-        }
-
-        footer a {
-            color: #6abaff; 
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        .social-links {
-            margin: 20px 0;
-        }
-
-        .social-links a {
-            color: #6abaff;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 16px;
-        }
-
-        .social-links a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            main {
-                padding: 30px 15px;
-            }
-
-            header h1 {
-                font-size: 28px;
-            }
-
-            main h2 {
-                font-size: 22px;
-            }
-
-            main p {
-                font-size: 14px;
-            }
-        }
-    </style>
+    .profile-img {
+      display: block;
+      margin: 1rem auto;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #30363d;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Hosein Shajari</h1>
-    </header>
-    
-    <div class="container">
-        <main>
-            <h2>About Me</h2>
-            <img src="profile-img.jpg" alt="Profile Picture" class="profile-img">
-            <p>I'm Hosein Shajari, a student of Mechatronics.</p>
-            <p>I love coding and programming and am always trying to learn new things.</p>
-            <p>I've experimented with different programming languages, and you can find my experiences and code on my GitHub page!</p>
-        </main>
-    </div>
+  <header>
+    <h1>Hosein Shajari</h1>
+    <p>Junior Embedded System Developer & Backend</p>
+  </header>
 
-    <footer>
-        <p>© 2024 hoseinvsc</p>
-        <p>Email me at: <a href="mailto:hoseinvsc@gmail.com">hoseinvsc@gmail.com</a></p>
-        <div class="social-links">
-            <p>Connect with me:</p>
-            <a href="https://github.com/hoseinvsc" target="_blank">GitHub</a>
-            <a href="https://twitter.com/binvw" target="_blank">Twitter</a>
-            <a href="https://t.me/hoseinvsc" target="_blank">Telegram</a>
-        </div>
-    </footer>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <img src="profile-img.jpg" alt="Profile Picture" class="profile-img">
+      <p>
+        I'm Hosein Shajari, a mechatronics student passionate about embedded systems, backend development, and building reliable solutions. 
+        I enjoy working at the intersection of hardware and software, constantly learning and experimenting with new technologies.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Embedded C / C++</li>
+        <li>Embedded Linux</li>
+        <li>Django & Backend APIs</li>
+        <li>Python & Automation</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <p>
+        Coming soon... I’m currently working on projects combining embedded systems and backend development.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hoseinvsc@gmail.com">hoseinvsc@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://github.com/hoseinvsc" target="_blank">GitHub</a>
+        <a href="https://twitter.com/binvw" target="_blank">Twitter</a>
+        <a href="https://t.me/hoseinvsc" target="_blank">Telegram</a>
+        <a href="https://instagram.com/hoseinvsc" target="_blank">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Hosein Sh. All rights reserved.
+  </footer>
 </body>
 </html>
