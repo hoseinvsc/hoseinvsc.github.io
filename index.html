@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hosein Shajari — Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0f0e;
+      --panel: #0f1513;
+      --text: #e6fff2;
+      --muted: #8fdcc0;
+      --accent: #00ff84; /* HackerNoon green vibe */
+      --border: #1f2a26;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, #0b0f0e, #0f1513);
+    }
+
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1rem 2rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+      padding: 2rem;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--accent);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    p {
+      margin: 0.5rem 0 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.5rem 0 0;
+    }
+
+    li {
+      margin: 0.4rem 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .profile {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent);
+      box-shadow: 0 0 0 4px rgba(0,255,132,0.08);
+    }
+
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.6rem 1.2rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills-list li::before {
+      content: "▸ ";
+      color: var(--accent);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: #0b0f0e;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .social-links {
+      margin-top: 0.8rem;
+      display: flex;
+      gap: 1.2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .social-links a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.9rem;
+      }
+
+      section {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <h1>Hosein Shajari</h1>
+      <p>Junior Embedded System Developer & Backend Engineer</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>// About Me</h2>
+      <div class="profile">
+        <img src="profile-img.jpg" alt="Profile Picture" class="profile-img" />
+        <p>
+          I’m Hosein Shajari, a mechatronics student focused on embedded systems and backend development.
+          I enjoy building systems where hardware meets software, and turning constraints into elegant solutions.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>// Skills</h2>
+      <ul class="skills-list">
+        <li>Embedded C / C++</li>
+        <li>Embedded Linux</li>
+        <li>Django & REST APIs</li>
+        <li>Python & Automation</li>
+        <li>Hardware–Software Integration</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>// Projects</h2>
+      <p>
+        Currently under construction. Expect embedded + backend hybrids, logging systems,
+        and practical engineering experiments.
+      </p>
+    </section>
+
+    <section>
+      <h2>// Contact</h2>
+      <p>Email: <a href="mailto:hoseinvsc@gmail.com">hoseinvsc@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://github.com/hoseinvsc" target="_blank">GitHub</a>
+        <a href="https://x.com/binvw" target="_blank">Twitter</a>
+        <a href="https://t.me/hoseinvsc" target="_blank">Telegram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Hosein Shajari — Built with curiosity and caffeine
+  </footer>
+
+</body>
+</html>
