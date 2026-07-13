@@ -278,13 +278,13 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 44px;
-      height: 44px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
       background: var(--accent-dim);
       border: 1px solid rgba(0, 255, 132, 0.08);
       color: var(--text);
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       transition: all var(--transition);
       text-decoration: none;
     }
@@ -297,8 +297,15 @@
       border-color: var(--accent);
     }
 
-    .social-icons a .label {
-      display: none; 
+    .social-icons a.instagram i {
+      background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .social-icons a.instagram:hover i {
+      -webkit-text-fill-color: #0a0e0d;
     }
 
     footer {
@@ -321,7 +328,6 @@
       margin: 0 0.2rem;
     }
 
-    /* ===== Responsive ===== */
     @media (max-width: 640px) {
       body {
         padding: 1rem 0.8rem;
@@ -351,9 +357,9 @@
       }
 
       .social-icons a {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
       }
     }
 
@@ -381,17 +387,6 @@
         opacity: 1;
         transform: translateY(0);
       }
-    }
-
-    .social-icons a[title="Instagram"] i {
-      background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .social-icons a[title="Instagram"]:hover i {
-      -webkit-text-fill-color: #0a0e0d;
     }
   </style>
 </head>
@@ -482,33 +477,23 @@
           <i class="fas fa-envelope" style="color: var(--accent);"></i> hoseinvsc@gmail.com
         </a>
         <div class="social-icons">
-          <a href="https://github.com/hoseinvsc" target="_blank" title="GitHub">
+          <a href="https://github.com/hoseinvsc" target="_blank" title="GitHub" class="github">
             <i class="fab fa-github"></i>
-            <span class="label">GitHub</span>
           </a>
-          <a href="https://x.com/inrvctr" target="_blank" title="Twitter">
+          <a href="https://x.com/inrvctr" target="_blank" title="Twitter" class="twitter">
             <i class="fab fa-x-twitter"></i>
-            <span class="label">Twitter</span>
           </a>
-          <a href="https://instagram.com/hosein_shajari" target="_blank" title="Instagram">
+          <a href="https://instagram.com/hoseinvsc" target="_blank" title="Instagram" class="instagram">
             <i class="fab fa-instagram"></i>
-            <span class="label">Instagram</span>
           </a>
-          <a href="https://t.me/hoseinvsc" target="_blank" title="Telegram">
+          <a href="https://t.me/hoseinvsc" target="_blank" title="Telegram" class="telegram">
             <i class="fab fa-telegram-plane"></i>
-            <span class="label">Telegram</span>
           </a>
-          <a href="https://linkedin.com/in/hosein-shajari" target="_blank" title="LinkedIn">
+          <a href="https://linkedin.com/in/hosein-shajari" target="_blank" title="LinkedIn" class="linkedin">
             <i class="fab fa-linkedin-in"></i>
-            <span class="label">LinkedIn</span>
           </a>
         </div>
       </div>
-      <p style="margin-top: 0.8rem; color: var(--muted); font-size: 0.85rem;">
-        <i class="fas fa-phone-alt" style="color: var(--accent);"></i> +98 912 345 6789
-        <span style="margin: 0 0.8rem;">·</span>
-        <i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Tehran, Iran
-      </p>
     </section>
 
     <footer class="fade-in">
